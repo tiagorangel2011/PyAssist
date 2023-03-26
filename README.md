@@ -11,7 +11,11 @@
 It uses a reverse-engineered Bito.co API to get AI, so there is no need of setting an OpenAI key.
 
 ## How do I install it?
-Simply download the code to your computer and run the "main.py" file.
+First, install the necessary dependencies:
+```
+pip install PyAudio SpeechRecognition pyttsx3
+```
+Then, download the code to your computer and run the "main.py" file.
 If you want to adjust anything, simply change the code.
 
 ## How to contribute?
