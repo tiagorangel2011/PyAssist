@@ -20,11 +20,11 @@ while True:
         audio = r.listen(source)
 
         try:
-            # This converts the speech to text. Sometimes the library thinks clippy means "creepy" so I need to replace it:).
-            speech = r.recognize_google(audio).lower().replace("hi clippy", "hey clippy").replace("hello clippy", "hey clippy").replace("creepy", "clippy")
+            # This converts the speech to text.
+            speech = r.recognize_google(audio).lower().replace("hi assist", "hey assist").replace("hello assist", "hey assist")
 
-            if "hey clippy" in speech and speech != "":
-                speech = speech.replace("hey clippy", "")
+            if "hey assist" in speech and speech != "":
+                speech = speech.replace("hey assist", "")
                 print(">>> " + speech)
                 asyncio.run(answer(speech))
                 engine.say("Hi")
